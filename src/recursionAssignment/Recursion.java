@@ -28,8 +28,13 @@ public class Recursion{
  public static String stringClean(String str){
    // Given a string, return recursively a "cleaned" string where adjacent chars that are the same have been reduced to a single char. So "yyzzza" yields "yza".
 
+   // Base Case
    if(str.substring(1).equals("")){
      return str.substring(0);
+   // Recursive Case
+   }else if(str.charAt(0) == str.charAt(1)){
+     return str.charAt(0) + stringClean(str.substring(2));
    }
+   return str.charAt(0) + stringClean(str.substring(1));
  }
 }

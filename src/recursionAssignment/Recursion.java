@@ -25,4 +25,7 @@ public class Recursion{
      return str.substring(0,1) + pairStar(str.substring(1));
    }
  }
+ public static String stringClean(String str){
+   
+ }
 }

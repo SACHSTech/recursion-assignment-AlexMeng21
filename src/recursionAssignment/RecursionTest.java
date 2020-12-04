@@ -33,6 +33,11 @@ public class RecursionTest{
     public void pairStarTest3(){
       assertEquals("hel*lo", Recursion.pairStar("hello"));
     }
+
+    @Test
+    public void stringClean(){
+      assertEquals("yza", Recursion.stringClean("yyzzza"));
+    }
     
     
 }

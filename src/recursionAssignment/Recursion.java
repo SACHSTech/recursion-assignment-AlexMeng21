@@ -32,8 +32,10 @@ public class Recursion{
    if(str.substring(1).equals("")){
      return str.substring(0);
    // Recursive Case
+   }else if(str.charAt(0) == str.charAt(1) && str.charAt(0) == str.charAt(2)){
+     return str.charAt(0) + stringClean(str.substring(3));
    }else if(str.charAt(0) == str.charAt(1)){
-     return str.charAt(0) + stringClean(str.substring(1));
+     return str.charAt(0) + stringClean(str.substring(2));
    }
    return str.charAt(0) + stringClean(str.substring(1));
  }

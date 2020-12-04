@@ -15,10 +15,10 @@ public class Recursion{
  }
 
  public static String pairStar(String str){
-   //Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a "*".
+   // Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a "*".
 
    if(str.substring(1).equals("")){
-     return str.substring(0) + ("");
+     return str.substring(0);
    }else if (str.substring(0,1).equals(str.substring(1,2))){
      return str.substring(0,1) + "*" + pairStar(str.substring(1));
    }else{
@@ -26,6 +26,10 @@ public class Recursion{
    }
  }
  public static String stringClean(String str){
-   
+   // Given a string, return recursively a "cleaned" string where adjacent chars that are the same have been reduced to a single char. So "yyzzza" yields "yza".
+
+   if(str.substring(1).equals("")){
+     return str.substring(0);
+   }
  }
 }

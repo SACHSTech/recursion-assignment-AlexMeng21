@@ -16,9 +16,12 @@ public class Recursion{
 
  public static String pairStar(String str){
    // Given a string, compute recursively a new string where identical chars that are adjacent in the original string are separated from each other by a "*".
-
+    // base case
    if(str.substring(1).equals("")){
      return str.substring(0);
+     // recursive case
+   }else if (str.substring(0,1).equals(str.substring(1,2))){
+     return str.substring(0,1) + "*" + pairStar(str.substring(1));
    }else{
      return str.substring(0,1) + pairStar(str.substring(1));
    }

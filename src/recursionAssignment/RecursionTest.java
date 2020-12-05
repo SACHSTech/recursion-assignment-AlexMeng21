@@ -25,7 +25,11 @@ public class RecursionTest{
     public void pairStarTest1(){
       assertEquals("x*x*xy*y*y", Recursion.pairStar("xxxyyy"));
     }
-   
+    @Test
+    public void pairStarTest2(){
+      assertEquals("hel*lo", Recursion.pairStar("hello"));
+    }
+
 
     @Test
     public void stringClean(){

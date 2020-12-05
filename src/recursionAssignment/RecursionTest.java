@@ -43,6 +43,9 @@ public class RecursionTest{
       assertEquals("abcd", Recursion.stringClean("abbbcdd"));
     }
 
-    
-    
+    @Test
+    public void stringClean3(){
+      assertEquals("helo", Recursion.stringClean("hello"));
+    }
+   
 }

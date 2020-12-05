@@ -29,7 +29,9 @@ public class Recursion{
    // Given a string, return recursively a "cleaned" string where adjacent chars that are the same have been reduced to a single char. So "yyzzza" yields "yza".
 
    // Base Case
-   if(str.substring(1).equals("")){
+   if(str.substring(0).equals("")){
+     return str.substring(0);
+   }else if (str.substring(1).equals("")){
      return str.substring(0);
    }else if(!str.substring(2).equals("")){
      if(str.charAt(0) == str.charAt(1) && str.charAt(0) == str.charAt(2)){

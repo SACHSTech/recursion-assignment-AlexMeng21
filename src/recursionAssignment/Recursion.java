@@ -36,9 +36,12 @@ public class Recursion{
      return str.substring(0);
    }else if (str.substring(1).equals("")){
      return str.substring(0);
+     // check third letter
    }else if(!str.substring(2).equals("")){
+     // check for triple
      if(str.charAt(0) == str.charAt(1) && str.charAt(0) == str.charAt(2)){
        return str.charAt(0) + stringClean(str.substring(3));
+       // recursive case (check for double)
      }else if(str.charAt(0) == str.charAt(1)){
        return str.charAt(1) + stringClean(str.substring(2));
      }else{

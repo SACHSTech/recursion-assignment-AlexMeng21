@@ -19,8 +19,6 @@ public class Recursion{
 
    if(str.substring(1).equals("")){
      return str.substring(0);
-   }else if (str.substring(0,1).equals(str.substring(1,2))){
-     return str.substring(0,1) + "*" + pairStar(str.substring(1));
    }else{
      return str.substring(0,1) + pairStar(str.substring(1));
    }

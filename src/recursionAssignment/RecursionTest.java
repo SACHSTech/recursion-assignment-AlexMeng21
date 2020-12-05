@@ -19,6 +19,10 @@ public class RecursionTest{
         // assertTrue(TESTBOOLEAN);
         assertEquals(4,Recursion.count7(71777));
     }
+    @Test
+    public void Count7Test2(){
+      assertEquals(1, Recursion.count7(7));
+    }
     
     // add more tests
     @Test
